@@ -11,3 +11,5 @@ Open a pull request from `break-discount` into `main` and the CodeImpact workflo
 - a rule finding: `checkout` calls `applyDiscount` without the new required argument;
 - a type-checker finding: `tsc` reports TS2554 in `src/cart.ts`;
 - a failing impacted test: `checkout > applies the coupon to the subtotal` passes on `main` and fails on the PR.
+
+The CodeImpact workflow in `.github/workflows/codeimpact.yml` runs on every pull request.
