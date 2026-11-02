@@ -40,3 +40,5 @@ jobs:
       pull-requests: write
     steps:
       - uses: Haider425/codeImpact/actions/comment@review-layer
+        with:
+          fail-on-high: true
