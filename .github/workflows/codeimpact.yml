@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - uses: Haider425/codeImpact/actions/analyze@review-layer
+      - uses: Haider425/codeImpact/actions/analyze@v0.1.0
         with:
           install-command: npm ci
           typecheck: true
@@ -39,6 +39,6 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - uses: Haider425/codeImpact/actions/comment@review-layer
+      - uses: Haider425/codeImpact/actions/comment@v0.1.0
         with:
           fail-on-high: true
